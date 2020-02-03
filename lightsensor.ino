@@ -13,6 +13,7 @@ int previous_light_level;
 void setup() {
   strip.begin();
   Serial.begin(115200);
+  pinMode(BUZZER_PIN, OUTPUT);
   pinMode(PHOTORESISTOR_PIN, INPUT);
   previous_light_level = 0;
 }
