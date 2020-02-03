@@ -29,8 +29,9 @@ void loop() {
     tone(BUZZER_PIN, 200, 100);
   } else {
     strip.setPixelColor(0, 0, 0, 64);  //blue
+    noTone(BUZZER_PIN);
   }
   strip.show();
   previous_light_level = light_level;
-  delay(500);
+  delay(100);
 }
